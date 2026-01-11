@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="Demo2.Elements.Item"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Demo2.Elements"
+             mc:Ignorable="d">
+    <Grid Background="YellowGreen" Margin="0,0,0,10" Height="75">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="lDateAndDuration" VerticalAlignment="Top" Height="25" Content="Дата: xx.xx.xx (Продолжительность)" Grid.Column="0"/>
+        <Label x:Name="lFIO" Height="25" VerticalAlignment="Top" Content="ФИО: Иванов Иван Иванович" Margin="0,25,0,0" Grid.Column="0"/>
+        <Label x:Name="lPhone" Height="25" VerticalAlignment="Top" Content="Номер: +7 (919) 709-37-30" Margin="0,50,0,0" Grid.Column="0"/>
+        <Label x:Name="lSerialNumber" VerticalAlignment="Top" Height="25" Content="Паспорт: xx xx xxxxxx" Grid.Column="1"/>
+        <Label x:Name="lHostel" Height="25" VerticalAlignment="Top" Content="Отель" Margin="0,25,0,0" Grid.Column="1"/>
+
+        <Button Click="Update" Grid.Column="2" Height="25" VerticalAlignment="Top" Margin="5" Content="Изменить"/>
+        <Button Click="Delete" Grid.Column="2" Height="25" VerticalAlignment="Top" Margin="5, 35, 5, 5" Content="Удалить"/>
+
+
+    </Grid>
+</UserControl>
